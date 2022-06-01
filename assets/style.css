@@ -4,19 +4,39 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: #fff #ffffff;
+}
+
+*::-webkit-scrollbar {
+    width: 9px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(168, 168, 168);
+    border-radius: 20px;
+    border: 2px solid #9b9b9b;
 }
 
 :root {
     --cor-titulo-subtitulo: #02590F;
 }
 
+
+
 body {
+    overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
+    background: url('../images/Hero/Bg-Hero.svg') 72% 0% repeat-x;
 }
 
 .container {
     margin: 0 auto;
-    width: 345px;
+    width: 365px;
     max-width: 100%;
     max-height: 100%;
 }
@@ -44,6 +64,147 @@ body {
     line-height: 40px;
     text-transform: uppercase;
     color: var(--cor-titulo-subtitulo);
-    padding: 152px 0 0 0;
+    padding: 152px 0 370px 0;
     width: 294px;
+}
+
+/*SEÇÃO NOSSOS CURSOS*/
+
+.block-nossos-cursos h1 {
+    margin: 90px auto;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    color: #02590F;
+}
+
+.block-caixas {
+    display: flex;
+    overflow-x: scroll;
+    /*add flex-direction: row; para o desktop*/
+    margin: 0 0 100px 0;
+}
+
+.caixa {
+    display: flex;
+    flex-direction: column; 
+    max-width: 100%;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.caixa img {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 340px;
+}
+
+.caixa h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 23px;
+    text-align: center;
+    color: #02590F;
+    padding: 15px 0 0 0;
+}
+
+.caixa p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+    padding: 30px 10px 30px;
+}
+
+/*SEÇÃO QUEM SOMOS*/
+
+.quem-somos img {
+    display: none;
+}
+
+.quem-somos p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    /* or 188% */
+    text-align: justify;
+    color: #000000;
+}
+
+.quem-somos h1 {
+    margin: 90px auto 60px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    color: #02590F;
+}
+
+/*ONDE ESTAMOS*/
+
+.block-onde-estamos h1 {
+    margin: 90px auto 60px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    color: #02590F;
+}
+
+.block-onde-estamos iframe {
+    width: 100%;
+    background: url(loc.jpg);
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));
+
+}
+
+.onde-estamos {
+    margin-bottom: 90px;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #94ca4d;
+
+}
+
+.rodape-desktop {
+    padding: 30px 0;
+
+}
+
+.rodape-desktop p {
+    padding: 10px 0;
+    text-align: justify;
+    width: 80%;
+    font-size: 1.2rem;
+}
+
+.rodape-mobile {
+    text-align: start;
+}
+
+.rodape-mobile h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* or 150% */
+
+    text-align: start;
+}
+
+.rodape-mobile img{
+    padding: 15px 15px 30px 0;
 }
