@@ -208,3 +208,38 @@ footer {
 .rodape-mobile img{
     padding: 15px 15px 30px 0;
 }
+
+@media (min-width: 768px){
+    .container {
+        width: 758px;
+    }
+}
+@media (min-width: 1024px){
+    .container {
+        width: 1014px;
+    }
+    .cabecalho-mobile{
+        display: none;
+    }
+    .cabecalho-desktop{
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 10px 0;
+    }
+    .cabecalho-menu-pesquisa{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        
+    }
+    .cabecalho-menu-pesquisa input{
+        border-radius: 10px;
+        height: 30px;
+        width: 250px;
+    }
+    .cabecalho-menu-pesquisa img{
+        position: absolute;
+        top: 5px;
+        left: 220px;
+    }
+}
