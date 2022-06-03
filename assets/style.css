@@ -230,11 +230,11 @@ footer {
     .cabecalho-mobile {
         display: none;
     }
-
     .cabecalho-desktop {
         display: flex;
         justify-content: space-between;
         margin: 30px 10px 0;
+        
     }
 
     .cabecalho-menu-pesquisa {
@@ -264,9 +264,11 @@ footer {
         font-weight: 500;
         font-size: 20px;
         line-height: 23px;
-
         color: #02590F;
-
+    }
+    .cabecalho-menu-pesquisa a:hover {
+        color: red;
+        text-decoration: underline;
     }
 
     .block-caixas {
