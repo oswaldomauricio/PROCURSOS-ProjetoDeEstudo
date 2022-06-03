@@ -64,7 +64,7 @@ body {
     line-height: 40px;
     text-transform: uppercase;
     color: var(--cor-titulo-subtitulo);
-    padding: 152px 0 370px 0;
+    padding: 120px 0 370px 0;
     width: 294px;
 }
 
@@ -89,7 +89,7 @@ body {
 
 .caixa {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     max-width: 100%;
     align-items: center;
     margin-right: 15px;
@@ -205,41 +205,102 @@ footer {
     text-align: start;
 }
 
-.rodape-mobile img{
+.rodape-mobile img {
     padding: 15px 15px 30px 0;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .container {
         width: 758px;
     }
 }
-@media (min-width: 1024px){
+
+@media (min-width: 1024px) {
     .container {
         width: 1014px;
     }
-    .cabecalho-mobile{
+
+    .cabecalho-mobile {
         display: none;
     }
-    .cabecalho-desktop{
+
+    .cabecalho-desktop {
         display: flex;
         justify-content: space-between;
         margin: 30px 10px 0;
     }
-    .cabecalho-menu-pesquisa{
+
+    .cabecalho-menu-pesquisa {
         display: flex;
         flex-direction: row;
         position: relative;
-        
+        align-items: center;
     }
-    .cabecalho-menu-pesquisa input{
+
+    .cabecalho-menu-pesquisa input {
         border-radius: 10px;
         height: 30px;
         width: 250px;
+        border-color: #02590F;
     }
-    .cabecalho-menu-pesquisa img{
+
+    .cabecalho-menu-pesquisa img {
         position: absolute;
-        top: 5px;
+        top: 18px;
         left: 220px;
+    }
+
+    .cabecalho-menu-pesquisa a {
+        margin: 0 20px;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+
+        color: #02590F;
+
+    }
+
+    .block-caixas {
+        display: grid;
+        overflow-x: hidden;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        margin: 0 0 100px 0;
+    }
+
+    .caixa {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    /*footer*/
+    footer .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .rodape-desktop {
+        width: 70%;
+    }
+
+    .rodape-mobile {
+        text-align: start;
+    }
+
+    .rodape-mobile h1 {
+        text-align: center;
+    }
+
+    .rodape-mobile nav {
+        /*text-align: end;*/
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1200px;
     }
 }
