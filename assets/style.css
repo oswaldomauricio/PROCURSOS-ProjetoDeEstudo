@@ -294,13 +294,10 @@ footer {
         text-align: center;
     }
 
-    .rodape-mobile nav {
-        /*text-align: end;*/
-    }
-}
 
 @media (min-width: 1200px) {
     .container {
         width: 1200px;
+        }
     }
 }
