@@ -95,6 +95,9 @@ body {
     margin-right: 15px;
     cursor: pointer;
 }
+.caixa a{
+    text-decoration: none;
+}
 
 .caixa img {
     text-align: center;
@@ -111,6 +114,10 @@ body {
     text-align: center;
     color: #02590F;
     padding: 15px 0 0 0;
+}
+
+.caixa h2:hover{
+    color: red;
 }
 
 .caixa p {
