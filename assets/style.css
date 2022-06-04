@@ -276,12 +276,32 @@ footer {
         overflow-x: hidden;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 10px;
-        margin: 0 0 100px 0;
+        margin: 0 0 0 0;
     }
 
     .caixa {
         width: 70%;
         margin: 0 auto;
+        
+    }
+    .caixa img{
+        transition: all 0.5s;
+    }
+    .caixa img:hover {
+        transform: scale(1.06);
+    }
+
+    .quem-somos img{
+        display: flex;
+        width: 20%;
+        margin: 0 20px 0 0 ;
+    }
+    .quem-somos p{
+        max-width: 50%;
+    }
+    .quem-somos-main{
+        display: flex;
+        justify-content: center;
     }
 
     /*footer*/
