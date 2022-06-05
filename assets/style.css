@@ -249,6 +249,7 @@ footer {
         height: 30px;
         width: 250px;
         border-color: #02590F;
+        padding: 10px;
     }
 
     .cabecalho-menu-pesquisa img {
